@@ -16,6 +16,7 @@ This component is only the transition, to have the full animation you will need 
 * test with Android
 * add package.json
 * add tests
+* add examples
 * add to the npm registry
 
 ## Next release
