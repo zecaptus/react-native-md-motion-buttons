@@ -12,14 +12,14 @@ This component is only the transition, to have the full animation you will need 
 
 ## MVP Version
 
-* Separate both components
-* test with Android
-* add package.json
-* add tests
-* add examples
-* add to the npm registry
+- [ ] Separate both components
+- [ ] test with Android
+- [ ] add package.json
+- [ ] add tests
+- [ ] add examples
+- [ ] add to the npm registry
 
 ## Next release
 
-* Add ripple effect for button
-* Add a Floating Action Button (FAB) which will move to the center (like inVision dribble)
+- [ ] Add ripple effect for button
+- [ ] Add a Floating Action Button (FAB) which will move to the center (like inVision dribble)
