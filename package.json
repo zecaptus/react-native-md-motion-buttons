@@ -1,0 +1,34 @@
+{
+  "name": "react-native-md-motion-buttons",
+  "version": "0.1.0",
+  "description": "Material design motion buttons",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zecaptus/react-native-md-motion-buttons.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "material",
+    "design",
+    "motion",
+    "animation"
+  ],
+  "author": "Steeve Pitis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zecaptus/react-native-md-motion-buttons/issues"
+  },
+  "homepage": "https://github.com/zecaptus/react-native-md-motion-buttons#readme",
+  "peerDependencies": {
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.43.3"
+  }
+}

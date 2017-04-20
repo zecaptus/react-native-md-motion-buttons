@@ -1,22 +1,25 @@
-# react-native-animated-transition
+# react-native-md-motion-buttons
 
 I wanted to re-create this animation with react-native (https://dribbble.com/shots/1945593-Login-Home-Screen)
 
-![Example](https://cdn.dribbble.com/users/62319/screenshots/1945593/shot.gif)
-
-This component is only the transition, to have the full animation you will need my [loading button](https://github.com/zecaptus/react-native-loading-button), but it can works with your own buttons ;) (Actually both components are in, I will separate them later)
+![Example](examples/doc/button.gif)
 
 **This is actually a proof of concept and only tested with iOS.**
+
+# Installation
+
+`npm install react-native-md-motion-buttons --save`
+
+# Usage
+
+Take a look here : [examples/index.ios.js](examples/index.ios.js)
 
 # Roadmap
 
 ## MVP Version
 
-- [ ] Separate both components
 - [ ] test with Android
-- [ ] add package.json
-- [ ] add tests
-- [ ] add examples
+- [x] add examples
 - [ ] add to the npm registry
 
 ## Next release
