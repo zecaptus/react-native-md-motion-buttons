@@ -87,7 +87,6 @@ export default class examples extends Component {
 
 - [ ] test with Android
 - [x] add examples
-- [ ] add to the npm registry
 
 ## Next release
 
