@@ -12,7 +12,7 @@ import {
   View,
   Button
 } from 'react-native';
-import { MdButton, MdOverlay } from 'react-native-md-motion-buttons';
+import { Login } from 'react-native-md-motion-buttons';
 
 class Home extends Component {
   render() {
@@ -20,74 +20,37 @@ class Home extends Component {
       <Text style={styles.welcome}>
         New screen
       </Text>
-      <Button title="Reset" onPress={this.props.close} />
+      <Button title="Reset" onPress={this.props.logout} />
 
     </View>)
   }
 }
 
 export default class examples extends Component {
-  constructor(props){
-    super(props);
-
-    this.state = {
-      loading: false,
-      nextScreen: false,
-      color: "#380b22"
-    };
-  }
-
-  reset = () => {
-
-    this.overlay.fadeIn(() => {
-      this.setState({nextScreen: false}, () => {
-        this.overlay.zoomOut(() => {
-          this.setState({ loading: false });
-        })
-      })
-    })
-
-  };
-
   render() {
-    const promise = () => new Promise((resolve, reject) => {
-      setTimeout(() => resolve(), 2000);
-    });
+    const promise = () => new Promise((resolve, reject) => setTimeout(() => resolve(), 2000) );
 
     return (
-      <View style={styles.container}>
-        <MdOverlay
-            color={this.state.color}
-            onTransition={() => this.setState({nextScreen: true}, () => this.overlay.fadeOut(() => this.overlay.reset()))}
-            ref={ref => this.overlay = ref} />
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-        <MdButton
-            label="Login"
-            ref={ref => this.button = ref}
-            loading={this.state.loading}
-            onClick={c => {
-                this.setState({
-                  color: "#380b22",
-                  loading: true
-                });
-                promise()
-                .then(() => this.overlay.init(c))
-                .catch(() => this.setState({loading: false}));
-              }}
-            style={styles.button}
-            color="rgb(255,155,57)" />
-        {this.state.nextScreen ? <Home close={this.reset} />: null}
-      </View>
-    );
+        <Login.View style={styles.container} homeScreen={<Home />}>
+
+          <Text style={styles.welcome}>
+            Welcome to React Native!
+          </Text>
+          <Text style={styles.instructions}>
+            To get started, edit index.ios.js
+          </Text>
+          <Text style={styles.instructions}>
+            Press Cmd+R to reload,{'\n'}
+            Cmd+D or shake for dev menu
+          </Text>
+
+          <Login.Button
+              onPress={promise}
+              style={styles.button}
+              color="rgb(255,155,57)" />
+
+        </Login.View>
+    )
   }
 }
 

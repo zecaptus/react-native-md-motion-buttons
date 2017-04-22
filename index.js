@@ -1,6 +1,5 @@
-import { Button, Overlay } from './src/Login';
+import * as Login from './src/Login';
 
-export default {
-    MdButton: Button,
-    MdOverlay: Overlay
+module.exports = {
+    Login
 };
