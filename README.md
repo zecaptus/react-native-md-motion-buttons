@@ -68,8 +68,8 @@ export default class examples extends Component {
 
 | Prop | Type | Description |
 |---|---|---|
-|**`children`**|`ReactElement<any>`|React Element(s) to render.  _Login.Button must be a direct child._|
-|**`homeScreen`**|`ReactElement<any>`|New screen to render after the animation|
+|**`children`**|`ReactElement<any>`|React Element(s) to render. **Button must be a direct child.**|
+|**`homeScreen`**|`ReactElement<any>`|New screen to render after the animation. `<View>` expose a `logout` function as a prop to this Component |
 |**`style`**|`StyleSheet<any>`|Apply style to the View|
 
 #### Button Props
