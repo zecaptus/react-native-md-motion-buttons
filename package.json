@@ -1,12 +1,15 @@
 {
   "name": "react-native-md-motion-buttons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Material design motion buttons",
   "main": "index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
+    "start": "cd examples/Login && npm start",
+    "ios": "cd examples/Login && react-native run-ios",
+    "android": "cd examples/Login && react-native run-android"
   },
   "repository": {
     "type": "git",

@@ -10,7 +10,8 @@ import {
     StyleSheet,
     Text,
     View,
-    Button
+    Button,
+    StatusBar
 } from 'react-native';
 import { Login } from 'react-native-md-motion-buttons';
 
@@ -37,6 +38,7 @@ export default class examples extends Component {
 
     return (
         <Login.View style={styles.container} homeScreen={<Home />}>
+          <StatusBar translucent={true} backgroundColor='rgba(255, 255, 255, .2)' barStyle="dark-content" />
 
           <Text style={styles.welcome}>
             Welcome to React Native!

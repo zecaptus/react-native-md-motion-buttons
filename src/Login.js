@@ -92,10 +92,11 @@ class View extends Component {
 
         return (
             <NativeView style={style}>
+                {this.renderChildren()}
+                {nextScreen ? React.cloneElement(homeScreen, { logout: this.logout }) : null}
                 <Overlay color={color}
                          ref="overlay"
                          onTransition={this.transition} />
-                {nextScreen ? React.cloneElement(homeScreen, { logout: this.logout }) : this.renderChildren()}
             </NativeView>
         )
     }
@@ -123,7 +124,7 @@ class Button extends Component {
     constructor(props) {
         super(props);
 
-        this.buttonWidth = new Animated.Value(0);
+        this.buttonWidth = new Animated.Value(props.loading ? 1 : 0);
 
         this.state = {
             width: 0,
@@ -268,7 +269,7 @@ class Overlay extends Component {
             this.overlayFade,
             {
                 toValue: end,
-                duration: 200,
+                duration: 100,
                 easing: Easing.Standard
             }
         ).start(callback);
