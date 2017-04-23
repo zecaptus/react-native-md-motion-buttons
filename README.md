@@ -1,10 +1,11 @@
-# react-native-md-motion-buttons
+# react-native-md-motion-buttons (iOS / Android)
+
+[![npm version](https://badge.fury.io/js/react-native-md-motion-buttons.svg)](https://badge.fury.io/js/react-native-md-motion-buttons)
 
 I wanted to re-create this animation with react-native (https://dribbble.com/shots/1945593-Login-Home-Screen)
 
 ![Example](examples/doc/button.gif)
 
-**This is actually a proof of concept and only tested with iOS.**
 
 # Installation
 
