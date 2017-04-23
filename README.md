@@ -86,7 +86,7 @@ export default class examples extends Component {
 
 ## MVP Version
 
-- [ ] test with Android
+- [x] test with Android
 - [x] add examples
 
 ## Next release
