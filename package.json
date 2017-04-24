@@ -6,10 +6,16 @@
   "directories": {
     "example": "examples"
   },
+  "config": {
+    "exp": "Login"
+  },
   "scripts": {
-    "start": "cd examples/Login && npm start",
-    "ios": "cd examples/Login && react-native run-ios",
-    "android": "cd examples/Login && react-native run-android"
+    "start": "node scripts start",
+    "ios": "node scripts ios",
+    "android": "node scripts android",
+    "build": "rm -rf examples/Login/node_modules/react-native-md-motion-buttons && cd examples/Login && npm install",
+    "test": "node scripts test",
+    "watch": "node scripts watch"
   },
   "repository": {
     "type": "git",
@@ -31,6 +37,9 @@
   "homepage": "https://github.com/zecaptus/react-native-md-motion-buttons#readme",
   "peerDependencies": {
     "react": "16.0.0-alpha.6",
-    "react-native": "0.43.3"
+    "react-native": "0.43.*"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0"
   }
 }

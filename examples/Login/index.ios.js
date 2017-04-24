@@ -45,6 +45,7 @@ export default class examples extends Component {
           </Text>
 
           <Login.Button
+              test="ripple"
               onPress={promise}
               style={styles.button}
               color="rgb(255,155,57)" />

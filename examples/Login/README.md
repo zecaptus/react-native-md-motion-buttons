@@ -1,3 +1,3 @@
 # Example
 
-![Example](doc/button.gif)
+![Example](../doc/button.gif)

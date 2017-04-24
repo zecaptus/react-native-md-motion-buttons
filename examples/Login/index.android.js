@@ -36,6 +36,7 @@ export default class examples extends Component {
   render() {
     const promise = () => new Promise((resolve, reject) => setTimeout(() => resolve(), 2000) );
 
+    console.log("login", Login);
     return (
         <Login.View style={styles.container} homeScreen={<Home />}>
           <StatusBar translucent={true} backgroundColor='rgba(255, 255, 255, .2)' barStyle="dark-content" />
@@ -55,6 +56,7 @@ export default class examples extends Component {
               title="Login"
               onPress={promise}
               style={styles.button}
+              rippleMask={{borderRadius:25, mainBgColor: "#F5FCFF"}}
               color="rgb(255,155,57)" />
 
         </Login.View>

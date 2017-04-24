@@ -84,12 +84,7 @@ export default class examples extends Component {
 
 # Roadmap
 
-## MVP Version
-
-- [ ] test with Android
-- [x] add examples
-
 ## Next release
 
-- [ ] Add ripple effect for button
+- [x] Add ripple effect for button
 - [ ] Add a Floating Action Button (FAB) which will move to the center (like inVision dribble)
