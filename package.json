@@ -41,5 +41,8 @@
   },
   "devDependencies": {
     "cpx": "^1.5.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1"
   }
 }
